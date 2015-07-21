@@ -1,0 +1,124 @@
+#---------------------------------------------
+# TINT2 CONFIG FILE
+#---------------------------------------------
+#---------------------------------------------
+# BACKGROUND AND BORDER
+#---------------------------------------------
+# 1) global
+rounded = 0
+border_width = 1
+background_color = #000000 30
+border_color =  #000000 80
+
+# 2) inner cells
+rounded = 5
+border_width = 2
+background_color = #ffffff 13
+border_color = #000000 80
+
+# 3) icons
+rounded = 3
+border_width = 1
+background_color = #ffffff 10
+border_color = #ffffff 15
+
+# 4) active icon
+rounded = 3
+border_width = 1
+background_color = #ffffff 20
+border_color = #ffffff 30
+
+#---------------------------------------------
+# PANEL
+#---------------------------------------------
+panel_monitor = all
+panel_position = bottom middle horizontal
+panel_size = 98% 36
+#panel_items = TSC
+panel_margin = 0 0
+panel_padding = 2 1 4
+font_shadow = 0
+panel_background_id = 1
+wm_menu = 1
+panel_dock = 0
+panel_layer = top
+autohide = 0
+autohide_show_timeout = 0.3
+autohide_hide_timeout = 1.5
+autohide_height = 6
+strut_policy = follow_size
+
+#---------------------------------------------
+# TASKBAR
+#---------------------------------------------
+taskbar_mode = multi_desktop
+taskbar_padding = 2 0 3
+taskbar_background_id = 2
+#taskbar_name = 0
+
+#---------------------------------------------
+# TASK
+#---------------------------------------------
+urgent_nb_of_blink = 20
+task_icon = 1
+task_text = 0
+task_centered = 0
+#task_maximum_size = 32 32
+#task_width = 169
+task_width = 32
+
+task_padding = 2 2
+
+task_background_id = 3
+task_active_background_id = 4
+task_iconified_background_id = 3
+task_urgent_background_id = 4
+
+task_icon_asb = 100 -20 -20
+task_active_icon_asb = 100 0 30
+task_iconified_icon_asb = 100 -20 -20
+task_urgent_icon_asb = 100 40 40
+
+task_font = comicsans 06_55 6
+task_font_color = #d8d8d8 60
+task_active_font_color = #d8d8d8 100
+task_urgent_font_color = #ffffff 100
+task_iconified_font_color = #d8d8d8 60
+
+#---------------------------------------------
+# SYSTRAYBAR
+#---------------------------------------------
+systray_padding = 2 1 2
+systray_background_id = 2
+#systray_icon_asb = 100 -100 -25
+
+#---------------------------------------------
+# CLOCK
+#---------------------------------------------
+time1_format = %R
+time1_font = droidsans bold 10
+#time1_timezone = :Boise
+time2_format = %a %b %d
+time2_font = droidsans bold 8
+#time2_timezone = :Boise
+clock_font_color = #ffffff 76
+clock_padding = 4 2
+clock_background_id = 2
+clock_lclick_command = gsimplecal
+#---------------------------------------------
+# TOOLTIPS
+#---------------------------------------------
+tooltip = 1
+tooltip_padding = 3 3
+tooltip_show_timeout = 0.0
+tooltip_hide_timeout = 0.0
+tooltip_background_id = 1
+tooltip_font_color = #efe5de 100
+tooltip_font = droidsans 10
+#---------------------------------------------
+# MOUSE ACTION ON TASK
+#---------------------------------------------
+mouse_middle = none
+mouse_right = close
+mouse_scroll_up = maximize_restore
+mouse_scroll_down = toggle_iconify
